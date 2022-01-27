@@ -1,0 +1,35 @@
+include ../data/content-pages.pug
+include ../data/contacts.pug
+
+include ../components/icon
+include ../components/avatar
+include ../components/nav
+include ../components/tab-pane
+include ../components/contact
+include ../components/search
+
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+    title(Layout Designer Messenger Hexlet Chat by Dmytro Komlyk)
+
+    link(rel="stylesheet" href="./styles/app.css")
+  
+  body.vh-100.p-md-4.overflow-hidden
+    .container-xxl.h-100.p-0.rounded.bg-white
+      .row.h-100.g-0
+        .col-md-4.d-flex.flex-column
+          header.order-2.order-md-1.bg-primary
+            block navigation
+          aside.order-1.order-md-2.h-100
+            block page-content
+        .col.d-none.d-md-block.border-start
+          main.h-100
+            block chat-content
+    script(src='./js/script.js')
+      
