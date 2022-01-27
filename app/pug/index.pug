@@ -1,0 +1,11 @@
+extends layout/default.pug
+
+block navigation
+  +nav(contentPages)
+block page-content
+  .tab-content(id="nav-tabContent")
+    each dataPage, namePage in contentPages
+      +tab-pane(namePage, dataPage)
+block chat-content
+
+
