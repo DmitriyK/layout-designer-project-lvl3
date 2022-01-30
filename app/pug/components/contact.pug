@@ -1,0 +1,9 @@
+mixin contact(contact = {})
+  a.card.mt-3.ps-3.text-reset.text-decoration-none.border-0.rounded-0.shadow-sm(href='#')
+    .d-flex.align-items-center
+      +avatar(contact.avatar, contact.name)(width=50, height=50)
+      .card-body.p-4.overflow-hidden
+        h5.h6.fw-bold.mb-1= contact.name
+        p.card-text
+          small.text-muted= contact.status
+      
