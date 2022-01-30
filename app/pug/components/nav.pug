@@ -1,0 +1,13 @@
+mixin nav(items)
+  nav.d-flex.px-3.py-4
+    a.ms-1.me-auto.pe-3.text-white(href='/')
+      +icon("logo")(width=15, height=25)
+
+    ul.nav.nav-tabs.border-0(role="tablist")
+      each itemData, itemName in items
+        li.nav-item(role="presentation")
+          -
+            const { target, tabId, navText, icon, isActive } = itemData
+          a.nav-link.d-flex.flex-column.flex-xxl-row.align-items-center.ps-3.py-0.pe-4.pe-md-3.border-0.text-light.bg-transparent(class=btnClass, id=tabId, href=`#${target}`, data-bs-toggle="tab", data-bs-target=`#${target}`, type="button", role="tab", aria-controls=target, aria-selected=isActive)
+            +icon(icon)(width=25, height=25)
+            small.d-none.d-md-block.ms-2= navText
