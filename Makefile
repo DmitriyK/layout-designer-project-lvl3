@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npx gulp server
+	npx gulp develop
 
 lint:
 	npx stylelint ./app/scss/**/*.scss
