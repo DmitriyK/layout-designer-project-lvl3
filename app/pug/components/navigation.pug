@@ -15,6 +15,6 @@ mixin navigation(...items)
               "d-md-none": isCurrentChat,
             }
 
-          a.nav-link.d-flex.flex-column.flex-xl-row.align-items-center.ps-3.py-0.pe-4.pe-md-3.border-0.text-light.bg-transparent(class=btnClass id=tabId, href=`#${target}`, data-bs-toggle="tab", data-bs-target=`#${target}`, type="button", role="tab", aria-controls=target, aria-selected=isActiveNav)
+          a.nav-link.d-flex.flex-column.flex-xl-row.align-items-center.ps-3.py-0.pe-4.pe-md-3.border-0.text-light.bg-transparent(class=btnClass id=tabId, href=`#${target}`, data-bs-toggle="tab", data-bs-target=`#${target}`, role="tab", aria-controls=target)
             +icon(icon)(width=25, height=25)
             small.d-none.d-md-block.ms-2= navText
