@@ -8,7 +8,7 @@ mixin current-chat(chats)
         .d-flex.align-items-center.ps-3.border-bottom
           +avatar(avatar, name)(width=50, height=50)
           .p-4.d-flex.flex-column
-            h3.h6.mb-1.fw-bold=name
+            h3.h6.mb-0.fw-bold=name
             small.text-muted=status
         ul.list-unstyled.hide-scrollbar.d-md-flex.flex-md-column.flex-grow-1.mb-0.pt-5.px-5.pb-4
           each message in messages
