@@ -1,0 +1,14 @@
+mixin message(message = {}, name, avatar)
+  if message.isMe
+    li.col-md-9.d-flex.mb-3.align-self-md-end
+      +avatar(profile.avatar, profile.name)(class="d-none d-md-block align-self-md-end me-3", width=50, height=50)
+      .p-4.rounded.shadow-sm.bg-primary
+        p.mb-0.pb-2.border-bottom.text-light=message.text
+        small.pt-1.text-gray=message.time
+  else
+    li.col-md-9.d-flex.mb-3
+      +avatar(avatar, name)(class="d-none d-md-block align-self-md-end me-3", width=50, height=50)
+      .p-4.rounded.shadow-sm.text-secondary.bg-light
+        h4.h6.fw-bold.text-dark=name
+        p.mb-0.pb-2.border-bottom=message.text
+        small.pt-1=message.time
