@@ -1,12 +1,20 @@
-include ../data/content-pages.pug
+//- Data
+include ../data/nav-tab.pug
 include ../data/contacts.pug
-
+include ../data/chats.pug
+include ../data/profile.pug
+//- Components
 include ../components/icon
 include ../components/avatar
-include ../components/nav
+include ../components/list
+include ../components/search
+include ../components/navigation
 include ../components/tab-pane
 include ../components/contact
-include ../components/search
+include ../components/chat
+include ../components/new-chat
+include ../components/current-chat
+include ../components/message
 
 
 doctype html
@@ -20,15 +28,15 @@ html(lang='ru')
 
     link(rel="stylesheet" href="./styles/app.css")
   
-  body.vh-100.p-md-4.overflow-hidden
-    .container-xxl.h-100.p-0.rounded.bg-white
+  body.vh-100.p-md-4.bg-gray
+    .container-xxl.h-100.p-0.m-0.rounded.bg-white
       .row.h-100.g-0
-        .col-md-4.d-flex.flex-column
-          header.order-2.order-md-1.bg-primary
-            block navigation
-          aside.order-1.order-md-2.h-100
-            block page-content
-        .col.d-none.d-md-block.border-start
+        .col-12.col-md-4.d-flex.flex-column.h-100
+          header.order-last.order-md-first.rounded-top-left-md.text-light.bg-primary
+            block header
+          aside.tab-content.h-100.hide-scrollbar(id="nav-tabContent")
+            block tab-content
+        .col-md-8.d-none.d-md-block.h-100.border-start
           main.h-100
             block chat-content
     script(src='./js/script.js')

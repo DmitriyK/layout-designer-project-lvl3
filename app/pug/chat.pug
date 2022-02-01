@@ -1,7 +1,10 @@
 extends layout/default.pug
 
-block navigation
-
-block page-content
-
+block header
+  - const currentPage = "chat" 
+  +navigation("current-chat", "contact", "chat", "profile")
+block tab-content
+  each data, key in navTab
+    +tab-pane(key, data)
 block chat-content
+    +current-chat(chats)
