@@ -1,0 +1,20 @@
+@use "sass:map";
+
+.hovered-card {
+  color: inherit !important;
+
+  &:hover,
+  &:active {
+    color: map-get($theme-colors, "light") !important;
+    background: map-get($theme-colors, "primary") !important;
+
+    .hovered-card-contact .card-text small {
+      color: map-get($theme-colors, "gray") !important;
+    }
+
+    .hovered-card-chat .card-text small {
+      color: map-get($theme-colors, "light") !important;
+    }
+  }
+}
+
