@@ -1,0 +1,69 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ),
+    "rounded-top": map-merge(
+      map-get($utilities, "rounded-top"),
+      ( responsive: true ),
+    ),
+    "rounded-end": map-merge(
+      map-get($utilities, "rounded-end"),
+      ( responsive: true ),
+    ),
+    "rounded-bottom": map-merge(
+      map-get($utilities, "rounded-bottom"),
+      ( responsive: true ),
+    ),
+    "rounded-start": map-merge(
+      map-get($utilities, "rounded-start"),
+      ( responsive: true ),
+    ),
+    "rounded-top-left": (
+      property: border-top-left-radius,
+      responsive: true,
+      class: rounded-top-left,
+      values: (null: $border-radius)
+    ),
+    "rounded-top-right": (
+      property: border-top-right-radius,
+      responsive: true,
+      class: rounded-top-right,
+      values: (null: $border-radius)
+    ),
+    "rounded-bottom-right": (
+      property: border-bottom-right-radius,
+      responsive: true,
+      class: rounded-bottom-right,
+      values: (null: $border-radius)
+    ),
+    "rounded-bottom-left": (
+      property: border-bottom-left-radius,
+      responsive: true,
+      class: rounded-bottom-left,
+      values: (null: $border-radius)
+    ),
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      ( responsive: true ),
+    ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( responsive: true ),
+    ),
+    "border-bottom": map-merge(
+      map-get($utilities, "border-bottom"),
+      ( responsive: true ),
+    ),
+    "border-start": map-merge(
+      map-get($utilities, "border-start"),
+      ( responsive: true ),
+    ),
+  )
+);
