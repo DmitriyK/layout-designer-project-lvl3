@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $theme-colors: (
   "primary": #4545a5,
   "secondary": #6c757d,
@@ -10,7 +12,6 @@ $theme-colors: (
   "white": #fff,
   "gray": #efefef,
 );
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -19,7 +20,6 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1600px
 );
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -27,9 +27,8 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1540px
 );
-
 $enable-shadows: true;
 $enable-responsive-font-sizes: true;
 $border-radius: 1rem;
-$border-color: map-get($theme-colors, "gray");
+$border-color: map.get($theme-colors, "gray");
 $small-font-size: 0.8rem;

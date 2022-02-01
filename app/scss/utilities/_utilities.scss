@@ -1,24 +1,26 @@
-$utilities: map-merge(
+@use "sass:map";
+
+$utilities: map.merge(
   $utilities,
   (
-    "rounded": map-merge(
-      map-get($utilities, "rounded"),
+    "rounded": map.merge(
+      map.get($utilities, "rounded"),
       ( responsive: true ),
     ),
-    "rounded-top": map-merge(
-      map-get($utilities, "rounded-top"),
+    "rounded-top": map.merge(
+      map.get($utilities, "rounded-top"),
       ( responsive: true ),
     ),
-    "rounded-end": map-merge(
-      map-get($utilities, "rounded-end"),
+    "rounded-end": map.merge(
+      map.get($utilities, "rounded-end"),
       ( responsive: true ),
     ),
-    "rounded-bottom": map-merge(
-      map-get($utilities, "rounded-bottom"),
+    "rounded-bottom": map.merge(
+      map.get($utilities, "rounded-bottom"),
       ( responsive: true ),
     ),
-    "rounded-start": map-merge(
-      map-get($utilities, "rounded-start"),
+    "rounded-start": map.merge(
+      map.get($utilities, "rounded-start"),
       ( responsive: true ),
     ),
     "rounded-top-left": (
@@ -45,24 +47,24 @@ $utilities: map-merge(
       class: rounded-bottom-left,
       values: (null: $border-radius)
     ),
-    "border": map-merge(
-      map-get($utilities, "border"),
+    "border": map.merge(
+      map.get($utilities, "border"),
       ( responsive: true ),
     ),
-    "border-top": map-merge(
-      map-get($utilities, "border-top"),
+    "border-top": map.merge(
+      map.get($utilities, "border-top"),
       ( responsive: true ),
     ),
-    "border-end": map-merge(
-      map-get($utilities, "border-end"),
+    "border-end": map.merge(
+      map.get($utilities, "border-end"),
       ( responsive: true ),
     ),
-    "border-bottom": map-merge(
-      map-get($utilities, "border-bottom"),
+    "border-bottom": map.merge(
+      map.get($utilities, "border-bottom"),
       ( responsive: true ),
     ),
-    "border-start": map-merge(
-      map-get($utilities, "border-start"),
+    "border-start": map.merge(
+      map.get($utilities, "border-start"),
       ( responsive: true ),
     ),
   )
