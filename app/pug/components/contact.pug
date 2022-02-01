@@ -4,7 +4,6 @@ mixin contact(contact = {})
       .d-flex.align-items-center
         +avatar(avatar, name)(width=50, height=50)
         .card-body.hovered-card-contact.p-4.overflow-hidden
-          h5.card-title.h6.fw-bold.mb-1=name
+          h5.card-title.h6.fw-bold.mb-0=name
           p.card-text
             small.text-muted=status
-            
