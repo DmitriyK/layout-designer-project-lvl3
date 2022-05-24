@@ -1,4 +1,4 @@
-name: build and linter
+name: linter
 
 on:
   push:
@@ -15,5 +15,3 @@ jobs:
         run: make install
       - name: run linter
         run: make lint
-      - name: run build
-        run: make start
