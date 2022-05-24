@@ -32,7 +32,7 @@ const imagesOptimize = () => {
 const spriteOptimize = () => {
   const config = {
     mode: {
-      symbol: { // Activate the «css» mode
+      symbol: {
         sprite: "../sprite.svg"
       }
     }
