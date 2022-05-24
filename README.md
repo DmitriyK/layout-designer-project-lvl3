@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="chat-messenger" title="chat-messenger" src="image-project.webp" width="900">
+  <img alt="chat-messenger" title="chat-messenger" src="image-project.webp" width="700">
 </div>
 
 ## About Chat Messenger
