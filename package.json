@@ -1,21 +1,21 @@
 {
-  "name": "layout-designer-project-lvl3",
+  "name": "@dmitriyk/layout-chat-messenger",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/DmitriyK/layout-designer-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/DmitriyK/layout-designer-project-lvl3/actions)",
+  "description": "Messenger chat layout",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DmitriyK/layout-designer-project-lvl3.git"
+    "url": "git+https://github.com/DmitriyK/layout-chat-messenger.git"
   },
-  "author": "Dmytro Komlyk",
+  "author": "Dmytro Komlyk <dima.komlyk@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DmitriyK/layout-designer-project-lvl3/issues"
+    "url": "https://github.com/DmitriyK/layout-chat-messenger/issues"
   },
-  "homepage": "https://github.com/DmitriyK/layout-designer-project-lvl3#readme",
+  "homepage": "https://github.com/DmitriyK/layout-chat-messenger#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
