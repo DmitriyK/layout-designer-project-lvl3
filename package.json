@@ -1,5 +1,5 @@
 {
-  "name": "@dmitriyk/layout-chat-messenger",
+  "name": "layout-chat-messenger",
   "version": "1.0.0",
   "description": "Messenger chat layout",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DmitriyK/layout-chat-messenger.git"
+    "url": "git+https://github.com/dmytro-komlyk/layout-chat-messenger.git"
   },
   "author": "Dmytro Komlyk <dima.komlyk@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DmitriyK/layout-chat-messenger/issues"
+    "url": "https://github.com/dmytro-komlyk/layout-chat-messenger/issues"
   },
-  "homepage": "https://github.com/DmitriyK/layout-chat-messenger#readme",
+  "homepage": "https://github.com/dmytro-komlyk/layout-chat-messenger#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
