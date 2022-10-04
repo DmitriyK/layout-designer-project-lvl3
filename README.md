@@ -14,7 +14,7 @@ This pet-project was created as part of the [Hexlet](https://ru.hexlet.io/progra
 ## Getting started
 
 ```sh
-git clone https://github.com/DmitriyK/layout-chat-messenger.git
+git clone https://github.com/dmytro-komlyk/layout-chat-messenger.git
 cd layout-chat-messenger/
 make install
 make start
